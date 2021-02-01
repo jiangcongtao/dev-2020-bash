@@ -1,0 +1,8 @@
+FROM alpine:3.12
+
+COPY bash-trap.sh /opt/bash-trap.sh
+WORKDIR /opt
+
+# RUN apk add --no-cache bash
+
+CMD ["./bash-trap.sh"]
